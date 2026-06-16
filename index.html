@@ -2,15 +2,47 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<title>这是你老弟建的</title>
+<meta name="referrer" content="no-referrer">
+<title>你居然发现了它！！！</title>
 <style>
-body{text-align:center;margin-top:120px;font-family:system-ui}
-h1{color:#222}
-p{color:#555;font-size:18px}
+body{text-align:center;margin-top:60px;font-family:system-ui}
+h1{color:#222;margin:30px 0 10px}
+p{color:#555;font-size:18px;margin:8px 0}
+.video-box{width:70%;margin:30px auto}
+video{width:100%;border-radius:6px}
+a{color:#007aff;text-decoration:none}
+a:hover{text-decoration:underline}
 </style>
 </head>
 <body>
-<h1>这是你老弟建的</h1>
+
+<!-- 原有iframe区域保留不动 -->
+<div id="freedom-iframe-container" style="position: relative; padding-top: calc(60% + 100px); width: 50%;margin:0 auto;">
+<iframe src="https://www.fsf.org/videos/escape-to-freedom/" scrolling="no" style="overflow: hidden; margin: 0; border: 0 none; display: block; position: absolute; width: 100%; height: 100%; top: 0;"></iframe>
+</div>
+<script>
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&dn;=gpl-3.0.txt GPL-3.0-or-later
+window.onmessage = function (e) { if (e.data.hasOwnProperty("freedom-iframe-height")) { document.getElementById('freedom-iframe-container').style.height=`${e.data["freedom-iframe-height"]}px`;  document.getElementById('freedom-iframe-container').style["padding-top"]="unset";} };
+// @license-end
+</script>
+
+<h1>我的天哪</h1>
 <p>没了</p>
+
+<!-- 新增：快手主页跳转链接 -->
+<p>我的快手主页：
+<a href="https://v.kuaishou.com/nnaFiP62" target="_blank" rel="noopener noreferrer">egg2.0 快手主页</a>
+</p>
+
+<!-- 新增：内嵌快手MP4视频播放器 -->
+<div class="video-box">
+<h3>视频：看了这么多快手，还是「egg2.0」最好玩了！</h3>
+<video controls crossorigin="anonymous">
+<source src="https://v2-pro.safetyvod.com/upic/2025/09/19/07/BMjAyNTA5MTkwNzM0MzBfMzIxMjYzNjA5Ml8xNzUyNzE2MDM4MDVfMl8z_b_B588163002c3ce87fb4cce0d0e07fac9a.mp4?pkey=AAVoecqIfH6IplDFmeTDU9FazZUlIGlO5is-sk2vrLERkgZX9ka7QkvAZl--_riKgnDgxXIl829T_aWuvP7yBOGbDnjd9ABHPMs6WxCEehiIp01FAtuqQuwTOTgyA0T9_pI&ss=vps,25,3,%E5%85%AC%E5%BC%80" type="video/mp4">
+您的浏览器不支持视频播放，可点击下方链接打开
+</video>
+<p>视频加载失败？<a href="https://v2-pro.safetyvod.com/upic/2025/09/19/07/BMjAyNTA5MTkwNzM0MzBfMzIxMjYzNjA5Ml8xNzUyNzE2MDM4MDVfMl8z_b_B588163002c3ce87fb4cce0d0e07fac9a.mp4?pkey=AAVoecqIfH6IplDFmeTDU9FazZUlIGlO5is-sk2vrLERkgZX9ka7QkvAZl--_riKgnDgxXIl829T_aWuvP7yBOGbDnjd9ABHPMs6WxCEehiIp01FAtuqQuwTOTgyA0T9_pI&ss=vps,25,3,%E5%85%AC%E5%BC%80" target="_blank">直达MP4原文件</a></p>
+</div>
+
 </body>
 </html>
