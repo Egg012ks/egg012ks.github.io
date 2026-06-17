@@ -1,0 +1,20 @@
+body {
+    text-align: center;
+    margin-top: 60px;
+    font-family: system-ui;
+    background-color: #ffffff;
+    padding: 0 15px;
+}
+.wrap {
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.wrap.loaded {
+    opacity: 1;
+    transform: translateY(0);
+}
+h1 {
+    color: #222;...
